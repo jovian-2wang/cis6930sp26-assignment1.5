@@ -1,0 +1,13 @@
+[project]
+name = "cis6930sp26-assignment1-5"
+version = "0.1.0"
+description = "MCP server for dair-ai/emotion dataset"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp",
+  "datasets",
+  "python-dotenv",
+]
+
+[project.scripts]
+emotion-server = "server:main"
