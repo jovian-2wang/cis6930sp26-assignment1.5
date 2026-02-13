@@ -1,0 +1,107 @@
+GatorLink: jiangweiwang
+Node: c0700a-s2.ufhpc
+
+=== get_sample(n=3) ===
+[
+  {
+    "text": "i fully believe and feel passionate about living bravely and outside my comfort zone i often revert to my comfortable ways",
+    "label": 2,
+    "emotion": "love"
+  },
+  {
+    "text": "i once knew a quaker who announced quite excitedly that he was feeling absolutely wonderful because for a period of about a fortnight nothing much had been happening in his brain",
+    "label": 1,
+    "emotion": "joy"
+  },
+  {
+    "text": "i think they feel somehow offended because the christians played a big part in destroying the earlier cultures religions and mythologies",
+    "label": 3,
+    "emotion": "anger"
+  }
+]
+
+=== count_by_emotion(emotion="joy") ===
+{
+  "emotion": "joy",
+  "label_id": 1,
+  "count": 5362
+}
+
+=== search_text(query="happy") ===
+{
+  "query": "happy",
+  "limit": 5,
+  "matches": 5,
+  "results": [
+    {
+      "index": 84,
+      "text": "i feel very happy and excited since i learned so many things",
+      "label": 1,
+      "emotion": "joy"
+    },
+    {
+      "index": 131,
+      "text": "i feel energetic and bouncy i m more than happy to go to the gym run around outside with my kids or take the pram for a long walk often i do all three in one day",
+      "label": 1,
+      "emotion": "joy"
+    },
+    {
+      "index": 202,
+      "text": "i feel the reason were apart of each others lives is because im in his to help him become something to push him to succeed and be successful and happy",
+      "label": 1,
+      "emotion": "joy"
+    },
+    {
+      "index": 388,
+      "text": "im pretty happy but a little on the nauseated side to feel thrilled",
+      "label": 1,
+      "emotion": "joy"
+    },
+    {
+      "index": 428,
+      "text": "im feeling happy and well",
+      "label": 1,
+      "emotion": "joy"
+    }
+  ]
+}
+
+=== analyze_emotion_distribution() ===
+{
+  "dataset": "dair-ai/emotion",
+  "split": "train",
+  "total": 16000,
+  "stats": [
+    {
+      "emotion": "joy",
+      "count": 5362,
+      "percent": 33.513
+    },
+    {
+      "emotion": "sadness",
+      "count": 4666,
+      "percent": 29.163
+    },
+    {
+      "emotion": "anger",
+      "count": 2159,
+      "percent": 13.494
+    },
+    {
+      "emotion": "fear",
+      "count": 1937,
+      "percent": 12.106
+    },
+    {
+      "emotion": "love",
+      "count": 1304,
+      "percent": 8.15
+    },
+    {
+      "emotion": "surprise",
+      "count": 572,
+      "percent": 3.575
+    }
+  ]
+}
+
